@@ -17,6 +17,13 @@ abstract class AbstractTest
     protected $identifier;
 
     /**
+     * Possible exception
+     *
+     * @var \Exception
+     */
+    protected $exception;
+
+    /**
      * Constructor
      *
      * @param string $identifier Test identifier
@@ -24,6 +31,26 @@ abstract class AbstractTest
     public function __construct($identifier)
     {
         $this->identifier = $identifier;
+    }
+
+    /**
+     * Getter exception
+     *
+     * @return \Exception
+     */
+    public function getException()
+    {
+        return $this->exception;
+    }
+
+    /**
+     * Setter exception
+     *
+     * @param \Exception $exception Possible exception
+     */
+    public function setException(\Exception $exception)
+    {
+        $this->exception = $exception;
     }
 
     /**
