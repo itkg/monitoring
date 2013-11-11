@@ -1,0 +1,26 @@
+{
+    "name":         "itkg/monitoring",
+    "type":         "library",
+    "description":  "Itkg monitoring helper library",
+    "keywords":     ["library", "monitoring", "itkg", "interakting"],
+    "homepage":     "http://github.com/itkg/monitoring",
+    "license":      "MIT",
+    "authors":      [
+        {
+            "name":     "Interakting",
+            "email":    "itkg@interakting.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "require": {
+        "itkg/core": "dev-master",
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": {
+            "Itkg\\Monitoring": "src"
+        }
+    }
+}
