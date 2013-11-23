@@ -9,6 +9,10 @@
         {
             "name":     "Interakting",
             "email":    "itkg@interakting.com"
+        },
+        {
+            "name":     "Pascal DENIS",
+            "email":    "pascal.denis@businessdecision.com"
         }
     ],
     "require-dev": {

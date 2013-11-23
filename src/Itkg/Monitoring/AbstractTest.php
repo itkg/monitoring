@@ -17,11 +17,25 @@ abstract class AbstractTest
     protected $identifier;
 
     /**
+     * Test category
+     *
+     * @var string
+     */
+    protected $category;
+
+    /**
      * Possible exception
      *
      * @var \Exception
      */
     protected $exception;
+
+    /**
+     * This test is critic?
+     *
+     * @var boolean
+     */
+    protected $critic;
 
     /**
      * Constructor
@@ -31,6 +45,26 @@ abstract class AbstractTest
     public function __construct($identifier)
     {
         $this->identifier = $identifier;
+    }
+
+    /**
+     * Getter category
+     *
+     * @return string
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * Setter category
+     *
+     * @param $category Test category
+     */
+    public function setCategory($category)
+    {
+        $this->category = $category;
     }
 
     /**
@@ -71,6 +105,26 @@ abstract class AbstractTest
     public function setIdentifier($identifier)
     {
         $this->identifier = $identifier;
+    }
+
+    /**
+     * Getter critic (This test is critic?)
+     *
+     * @return bool
+     */
+    public function isCritic()
+    {
+        return $this->critic;
+    }
+
+    /**
+     * Setter critic
+     *
+     * @param boolean $critic Test critic or not
+     */
+    public function setCritic($critic)
+    {
+        $this->critic = $critic;
     }
 
     /**
